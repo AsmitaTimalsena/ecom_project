@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Login Page</title> 
+	<link rel="stylesheet"
+		type="text/css"
+		href="style.css"> 
+		<style>
+			.header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; 
+      width: 100%;
+      margin-top:10px;
+      padding: 10px 0; 
+      background-color:rgb(142, 195, 251);
+    }
+
+    .logo {
+      width: 300px; 
+      margin-right: 10px;
+    }
+
+    .header h1 {
+      font-weight: bold; font-size: 70px;
+      margin: 0;
+      line-height: 1; 
+
+    }
+		</style>
+</head> 
+
+<body> 
+	<div class="container"> 
+		<div class="header">
+			<img class="logo" src="selilac.png" alt="Website Logo">
+			<h1 style="color:purple;">GREENOVATING THE WORLD</h1>
+
+		</div>
+		<h1>Login Page</h1> 
+		<form method="post"
+			action="login.php"> 
+			<label for="username">Username:</label> 
+			<input type="text"
+				id="username"
+				name="username" required> 
+
+			<label for="password">Password:</label> 
+			<input type="password"
+				id="password"
+				name="password" required> 
+
+			<input type="submit"
+				value="Login"> 
+		</form> 
+		<br><br> 
+		<p> Does not have an account? 
+			<a href="register.html">Click Here</a> 
+		</p> 
+	</div> 
+</body> 
+
+</html>
