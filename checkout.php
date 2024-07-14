@@ -2,64 +2,77 @@
 <html> 
 
 <head> 
+	 <meta charset="UTF-8"> <!-- Added charset meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Checkout Page</title> 
 	<link rel="stylesheet"
 		type="text/css"
 		href="checkout.css"> 
 </head> 
 <style> 
-	.header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start; 
-      width: 100%;
-      margin-top:10px;
-      padding: 10px 0; 
-      background-color:rgb(142, 195, 251);
-    }
+	body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
 
-    .logo {
-      width: 300px; 
-      margin-right: 10px;
-    }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            width: 100%;
+            margin-top: 0; /* Set margin-top to 0 */
+            padding: 0; /* Set padding to 0 */
+            background-color: rgb(142, 195, 251);       
+        }
 
-    .header h1 {
-      font-weight: bold; font-size: 70px;
-      margin: 0;
-      line-height: 1; 
+        .logo {
+            width: 300px; 
+            margin-right: 10px;
+        }
 
-    }
+        .header h1 {
+            font-weight: bold; 
+            margin: 0;
+            line-height: 1; 
+            font-size: 70px;
+            color: purple;
+        }
+
 	body { 
 		background-color: #ffffff; 
 		font-family: Arial, sans-serif; 
 	} 
 	
-	header { 
-		background-color: rgb(142, 195, 251);
-		color: #ffffff; 
-		padding: 20px; 
-	} 
 	
-	nav ul { 
-		margin: 0; 
-		padding: 0; 
-		list-style: none; 
-	} 
-	
-	nav li { 
-		display: inline-block; 
-		margin-right: 10px; margin-left: 10px; 
-	} 
-	
-	nav a { 
-		color: purple; font-size: 30px; 
-		text-decoration: none; 
-	} 
-	
-	nav a:hover { 
-		text-decoration: underline; 
-	} 
-	
+nav { 
+	background-color: rgb(142, 195, 251); 
+	padding: 5px; 
+} 
+
+nav ul { 
+	list-style: none; 
+	margin: 0px; 
+	padding: 0; 
+} 
+nav a { 
+	color: rebeccapurple; font-weight: bold;
+	text-decoration: none; 
+	padding: 5px 130px;
+	display: flex;  font-size: 30px;
+	cursor: pointer; 
+} 
+
+nav a:hover { 
+	background-color: lightgreen; font-size: 30px;
+	color: red; 
+} ul { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	display: flex; 
+	flex-wrap: wrap; 
+} 
+		
 	section { 
 		max-width: 600px; 
 		margin: 0 auto; 

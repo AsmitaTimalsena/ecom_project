@@ -26,10 +26,34 @@ if (isset($_POST["add_to_cart"])) {
 <!DOCTYPE html> 
 <html> 
 	<head> 
+		 <meta charset="UTF-8"> <!-- Added charset meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>An Online plant selling website</title> 
-		<link rel="stylesheet"
-				href="shop.css"> 
-				
+		<link rel="stylesheet"			href="shop.css"> 
+		<style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            width: 100%;
+            margin-top: 0; /* Set margin-top to 0 */
+            padding: 0; /* Set padding to 0 */
+            background-color: rgb(142, 195, 251);       
+        }
+
+        .logo {
+            width: 300px; 
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            font-weight: bold; 
+            margin: 0;
+            line-height: 1; 
+            font-size: 70px;
+            color: purple;
+        }
+		</style>		
 	</head> 
 	<body> 
 		<div class="header">
@@ -60,7 +84,7 @@ if (isset($_POST["add_to_cart"])) {
 				<ul> 
 					<li> 
 						<h3>Snake Plant</h3> 
-						<img src=" 999.jpg"	alt="Product 1"> 
+						<img class="flowers" src=" 999.jpg"	alt="Product 1"> 
 						<p> Organic snake plant donated </p>
 						<p> by our old customers</p> 
 						<p><span>$12</span></p> 
@@ -85,7 +109,7 @@ if (isset($_POST["add_to_cart"])) {
 					</li> 
 					<li> 
 						<h3>Asian While Lily Flower</h3> 
-						<img src= "999.jpg"	alt="Product 2"> 
+						<img class="flowers" src= "999.jpg"	alt="Product 2"> 
 						<p>100% pure lily flower</p> 
 						<p> 
 							<span>$5</span> 
@@ -112,7 +136,7 @@ if (isset($_POST["add_to_cart"])) {
 					</li> 
 					<li> 
 						<h3>Pink Hydranges</h3> 
-						<img src= "999.jpg"							alt="Product 3"> 
+						<img class="flowers" src= "999.jpg"							alt="Product 3"> 
 						<p>Beautiful pink hydranges flower</p> 
 						<p> 
 							<span>$10</span> 

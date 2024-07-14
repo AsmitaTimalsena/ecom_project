@@ -5,35 +5,13 @@ body {
 	color: green; 
 	font-family: Arial, sans-serif; 
 } 
-
 header { 
 	background-color: white; 
 	color: green; 
 	padding: 10px 20px; 
 } 
-.header {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start; 
-      width: 100%;
-      margin-top:10px;
-      padding: 10px 0; 
-      background-color:rgb(142, 195, 251);
-    }
 
-    .logo {
-      width: 300px; 
-      margin-right: 10px;
-    }
-.header h1 {
-      font-weight: bold; font-size: 70px;
-      margin: 0;
-      line-height: 1; 
-
-    }
-    
-
-nav { 
+	nav { 
 	background-color: rgb(142, 195, 251); 
 	padding: 5px; 
 } 
@@ -44,16 +22,22 @@ nav ul {
 	padding: 0; 
 } 
 nav a { 
-	color: rebeccapurple; font-weight: bold;
+	color: purple; font-weight: bold;
 	text-decoration: none; 
-	padding: 5px 10px;
+	padding: 5px 140px;
 	display: flex;  font-size: 30px;
 	cursor: pointer; 
 } 
 
 nav a:hover { 
-	background-color: lightgreen; font-size: 30px;
+	background-color:lightgreen; font-size: 30px;
 	color: red; 
+} ul { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	display: flex; 
+	flex-wrap: wrap; 
 } 
 
 main { 
@@ -71,26 +55,14 @@ h2 {
 	margin-top: 0; 
 } 
 
-ul { 
-	list-style: none; 
-	margin: 0; 
-	padding: 0; 
-	display: flex; 
-	flex-wrap: wrap; 
-} 
 
-li { 
-	margin-right: 5px; 
-	margin-bottom: 5px; 
-	flex-basis: calc(33.33% - 20px); 
-} 
 
 h3 { 
 	font-size: 24px; 
 	margin-top: 0; 
 } 
 
-img { 
+img.flowers { 
 	max-width: 200px; 
 	height: 200px; 
 	margin-bottom: 10px; 
@@ -104,9 +76,3 @@ button {
 	cursor: pointer; 
 }
 					
-						footer { 
-		background-color: rgb(142, 195, 251);
-		color: purple; font-size: 20px;
-		padding: 20px; 
-		text-align: center; 
-	} 

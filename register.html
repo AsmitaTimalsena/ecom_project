@@ -1,75 +1,75 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 
-<head> 
-	<title>Registration Page</title> 
-	<link rel="stylesheet"
-		type="text/css"
-		href="style.css"> 
-	<style>
-		.header {
-			display: flex;
-			align-items: center;
-			justify-content: flex-start; 
-			width: 100%;
-			margin-top: 10px;
-			padding: 10px 0; 
-			background-color:rgb(142, 195, 251);
-		}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-		.logo {
-			width: 300px; 
-			margin-right: 10px;
-		}
+         .header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            
+            top: 0;
+            margin-top: 0; /* Set margin-top to 0 */
+            padding: 0;
+            background-color: rgb(142, 195, 251);
+        }
+         
 
-		.header h1 {
-			font-weight: bold; font-size: 70px;
-			margin: 0;
-			line-height: 1; 
+        .logo {
+            width: 300px;
+            margin-right: 10px;
+        }
 
-		}
-	</style>
-</head> 
+        .header h1 {
+            font-weight: bold;
+            margin: 0;
+            line-height: 1;
+            font-size: 70px;
+            color: purple;
+        }
 
-<body> 
-	<div class="container"> 
-		<div class="header">
-			<img class="logo" src="selilac.png" alt="Website Logo">
-			<h1 style="color:purple;">GREENOVATING THE WORLD</h1>
-		</div>
-		<h2 style="font-zide:50px;">Registration Form</h2> <!-- Changed from h1 to h2 -->
-		<form method="post" action="register.php"> 
-			<label for="name"> 
-				Name: 
-			</label> 
-			<input type="text"
-				id="name"
-				name="name" required> 
+        .content {
+            padding-top: -2px; /* Adjust this value according to the height of the header */
+        }
+    </style>
+</head>
 
-			<label for="username"> 
-				Username: 
-			</label> 
-			<input type="text"
-				id="username"
-				name="username" required> 
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="selilac.png" alt="Website Logo">
+            <h1 style="color:purple;">GREENOVATING THE WORLD</h1>
+        </div>
+        <div class="content">
+            <h2 style="font-size: 35px;">Registration Form</h2>
+            <form method="post" action="register.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-			<label for="email">Email:</label> 
-			<input type="email"
-				id="email"
-				name="email" required> 
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
 
-			<label for="password">Password:</label> 
-			<input type="password"
-				id="password"
-				name="password" required> 
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-			<input type="submit"
-				value="Register"> 
-		</form> 
-		<p> Already have an account?</p> 
-		<a href="login.html">Click Here</a> 
-	</div> 
-	<br> 
-</body> 
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Register">
+            </form>
+            <p>Already have an account? <a href="login.html">Click Here</a></p>
+        </div>
+    </div>
+</body>
 
 </html>
